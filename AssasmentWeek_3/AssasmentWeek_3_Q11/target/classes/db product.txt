@@ -1,0 +1,9 @@
+create database product_management;
+use product_management;
+
+create table products(
+productid BIGINT PRIMARY KEY AUTO_INCREMENT,
+    productName VARCHAR(255) NOT NULL,
+    productPrice DOUBLE NOT NULL,
+    discountPercentage DOUBLE NOT NULL
+);
