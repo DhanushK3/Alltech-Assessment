@@ -1,0 +1,29 @@
+<div class="book-list-container">
+  <h2>Book List</h2>
+  <table class="book-list-table">
+    <thead>
+      <tr>
+        <th>Book Name</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--loop through books and display them in rows -->
+      <tr *ngFor="let book of books">
+        <td>{{ book.bookName }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.category }}</td>
+        <td class="book-list-actions">
+          <!-- buttons -->
+          <button (click)="updateBook(book.id)">Update  </button>
+          <button (click)="deleteBook(book.id)">Delete </button>
+          <button (click)="viewBook(book.id)">View</button>
+          <!-- <button (click)="viewBook(book.id)">View</button> -->
+         
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

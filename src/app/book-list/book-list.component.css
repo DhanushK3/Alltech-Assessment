@@ -1,0 +1,33 @@
+
+
+.book-list-container {
+  margin: 20px;
+}
+
+.book-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.book-list-table th, .book-list-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.book-list-actions button {
+  
+  
+  background-color: #4caf50;
+  color: white;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+/* .book-list-actions button {
+  padding: 8px;
+    cursor: pointer;
+} */
+
+

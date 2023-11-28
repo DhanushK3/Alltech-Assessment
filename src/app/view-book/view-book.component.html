@@ -1,0 +1,31 @@
+<div class="container mt-3">
+    <h2>View Book Details</h2>
+  
+    <div *ngIf="book">
+      <div class="form-group">
+        <label for="bookId">Book Id:   </label>{{ book.id }}
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="bookTitle">Book Title:   </label>{{ book.bookName }}
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="bookAuthor">Book Author:   </label>{{ book.author }}
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="bookCategory">Book Category:   </label>{{ book.category }}
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="bookPrice">Book Price:   </label>{{ book.price }}
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="bookQuantity">Book Quantity:   </label>{{ book.qty }}
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-success" (click)="goToBookList()">Back</button>
+</div>
